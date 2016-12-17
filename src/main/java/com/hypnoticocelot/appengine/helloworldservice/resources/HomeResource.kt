@@ -9,4 +9,10 @@ class HomeResource {
     fun get(): String {
         return "Hello, World!"
     }
+
+    @GET
+    @Path("check")
+    fun check() : String {
+        return "This is a check"
+    }
 }
